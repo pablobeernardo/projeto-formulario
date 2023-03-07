@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Home from './home/view';
+import UserController from './controller/user-controller';
+
 
 
 test('renders learn react link', () => {
-  render(<Home />);
+  render(<UserController />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
