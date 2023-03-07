@@ -1,7 +1,6 @@
 import UserModel from "../model/user-model";
 
 
-
 export interface Props{
 
 }

@@ -4,7 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import UserController from './controller/user-controller';
 
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
