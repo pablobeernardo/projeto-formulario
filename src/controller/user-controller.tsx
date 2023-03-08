@@ -10,7 +10,7 @@ import UserView from '../view/user-view';
 class UserController extends React.Component<Props, ControllerState> {
   constructor(props) {
     super(props);
-    this.state = {name: '', email: '', message: '', formSent: false}
+    this.state = {name: '', email: '', message: '', age:'', birthday:'', cpf:'', telefone:'', endereco:'', formSent: false}
   }
 
   handleChange = (event) => {
@@ -32,14 +32,20 @@ class UserController extends React.Component<Props, ControllerState> {
   }
 
   render() {
-    const {name, email, message, formSent } = this.state;
-    const userModel = {name, email, message};
+    const {name, email, message, age, birthday, cpf, telefone, endereco, formSent } = this.state;
+    const userModel = {name, email, message,age,birthday, cpf, telefone, endereco};
 
     return (
       <UserView
         name={userModel.name}
         email={userModel.email}
         message={userModel.message}
+        age={userModel.age}
+        birthday={userModel.birthday}
+        cpf={userModel.cpf}
+        telefone={userModel.telefone}
+        endereco={userModel.endereco}
+
         handleChange={this.handleChange}
         handleSubmit={this.handleSubmit}
         formSent={formSent}

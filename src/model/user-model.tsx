@@ -1,7 +1,12 @@
 export default class UserModel{
     name: string;
+    age: string;
     email: string;
     message: string;
+    birthday: string;
+    cpf: string;
+    telefone: string;
+    endereco: string;
 
     constructor() {
 
